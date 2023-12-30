@@ -38,17 +38,17 @@ export function getValues(): (0 | 1 | 0.00004 | 0.00200 | 0.10000)[] {
 
     // Value  Probability
     // 0      50%   0.5
-    // 1      10%   0.15
-    // 0.00004     35%   0.03
+    // 1      10%   0.03
+    // 0.00004     35%   0.15
     // 0.00200     4%   0.04
     // 0.10000    1%   0.01
 
     // Assign a reward value based on the generated random number
     if (randomNumber < 0.5) {
       values.push(0);
-    } else if (randomNumber < 0.95) {
-      values.push(1);
     } else if (randomNumber < 0.8) {
+      values.push(1);
+    } else if (randomNumber < 0.95) {
       values.push(0.00004);
     } else if (randomNumber < 0.99) {
       values.push(0.00200);
