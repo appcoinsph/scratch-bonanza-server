@@ -47,9 +47,9 @@ export function getValues(): (0 | 0.00004 | 0.0001 | 0.00200 | 0.10000)[] {
     if (randomNumber < 0.5) {
       values.push(0);
     } else if (randomNumber < 0.8) {
-      values.push(1);
-    } else if (randomNumber < 0.95) {
       values.push(0.00004);
+    } else if (randomNumber < 0.95) {
+      values.push(0.0001);
     } else if (randomNumber < 0.99) {
       values.push(0.00200);
     } else {
