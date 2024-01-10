@@ -41,8 +41,8 @@ export function getValues(): (0 | 0.00004 | 0.0001 | 0.00200 | 1)[] {
     // 0     7%   0.04
     // 0.00004     1%   0.03
     // 0.0001     2%   0.15
-    // 0.00200     35%   0.5
-    // 1    55%   0.01
+    // 0.00200     20%   0.5
+    // 1    70%   0.01
 
 
     // Assign a reward value based on the generated random number
