@@ -36,13 +36,13 @@ export function getValues(): (0 | 0.00004 | 0.0001 | 0.00200 | 1)[] {
       randomNumber = Math.random();
     }
 
-    // Value  Probability
+    // Value Probability
 
-    // 0     4%   0.04
-    // 0.00004     1%   0.03
-    // 0.0001     2%   0.15
-    // 0.00200     3%   0.5
-    // 1    90%   0.01
+    // 0 1% 0.04
+    // 0.00004 1% 0.03
+    // 0.0001 1% 0.15
+    // 0.00200 1% 0.5
+    // 1 96% 0.01
 
 
     // Assign a reward value based on the generated random number
