@@ -53,7 +53,7 @@ export function getValues(): (0 | 0.00004 | 0.25 | 0.00200 | 1)[] {
     } else if (randomNumber < 0.99) {
       values.push(0.00200);
     } else {
-      values.push(1);
+      values.push(0.25);
     }
   }
 
