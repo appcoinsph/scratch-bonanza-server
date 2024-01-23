@@ -38,7 +38,7 @@ export function getValues(): (0.00200 | 0.00004 | 0.0001 | 0.00200 | 0.00200)[] 
 
 // Value  Probability
     // 0.00200     51%   0.51
-    // 1      30%   0.3
+    // 0.00004      30%   0.3
     // 0.0001     15%   0.15
     // 0.00200     4%   0.04
     // 0.00200    0%   0.00
@@ -49,7 +49,7 @@ export function getValues(): (0.00200 | 0.00004 | 0.0001 | 0.00200 | 0.00200)[] 
     } else if (randomNumber < 0.8) {
       values.push(0.00004);
     } else if (randomNumber < 0.95) {
-      values.push(0.0001);
+      values.push(0.25);
     } else if (randomNumber < 0.99) {
       values.push(0.00200);
     } else {
