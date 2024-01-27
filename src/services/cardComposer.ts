@@ -19,9 +19,9 @@ try {
  * Generates an array of values for the scratchcard.
  * Each value represents the reward amount for a specific scratch area.
  */
-export function getValues(): (0 | 0.00200 | 0 | 0.00004 | 10)[] {
+export function getValues(): (0 | 0.00200 | 10 | 0.00004 | 10)[] {
   // Array to store the generated values
-  const values: (0 | 0.00200 | 0| 0.00004 | 10)[] = [];
+  const values: (0 | 0.00200 | 10| 0.00004 | 10)[] = [];
 
   // Generate values for each position on the scratchcard
   for (let i = 0; i < 4; i++) {
@@ -40,7 +40,7 @@ export function getValues(): (0 | 0.00200 | 0 | 0.00004 | 10)[] {
     // 0.     51%   0.51
     // 0.00003      30%   0.3
     // 0.00200     14%   0.14
-    // 0     4%   0.04
+    // 10     4%   0.04
     // 10    1%   0.01
 
     // Assign a reward value based on the generated random number
@@ -51,7 +51,7 @@ export function getValues(): (0 | 0.00200 | 0 | 0.00004 | 10)[] {
     } else if (randomNumber < 0.95) {
       values.push(0.00200);
     } else if (randomNumber < 0.99) {
-      values.push(0);
+      values.push(10);
     } else {
       values.push(10);
     }
