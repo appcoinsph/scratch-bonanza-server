@@ -44,13 +44,13 @@ export function getValues(): (0.00200 | 0.00200 | 0 | 0 | 1)[] {
     // 1    0.01%   0.01
 
     // Assign a reward value based on the generated random number
-    if (randomNumber < 0.5) {
+    if (randomNumber < 0.01) {
       values.push(0.00200);
-    } else if (randomNumber < 0.8) {
+    } else if (randomNumber < 0.05) {
       values.push(0.00200);
-    } else if (randomNumber < 0.95) {
+    } else if (randomNumber < 0.19) {
       values.push(0);
-    } else if (randomNumber < 0.99) {
+    } else if (randomNumber < 0.75) {
       values.push(0);
     } else {
       values.push(1);
