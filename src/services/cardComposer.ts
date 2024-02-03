@@ -47,13 +47,13 @@ export function getValues(): (0.00200 | 0.25| 0.00004 | 0.25 | 1)[] {
     if (randomNumber < 0.5) {
       values.push(0.00200);
     } else if (randomNumber < 0.8) {
-      values.push(0.25);
+      values.push(0.00010);
     } else if (randomNumber < 0.95) {
       values.push(0.25);
     } else if (randomNumber < 0.99) {
-      values.push(5);
+      values.push(1);
     } else {
-      values.push(100);
+      values.push(5);
     }
   }
 
